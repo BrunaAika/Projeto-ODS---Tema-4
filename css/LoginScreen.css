@@ -5,8 +5,9 @@
 }
 
 body{
-    background: linear-gradient(to right, rgb(71, 71, 247), #bb6f36);
-    font-family: Arial, sans-serif;
+    /*background: linear-gradient(to right, rgb(71, 71, 247), #bb6f36);*/
+    background: #c51a2d;
+    font-family: "Segoe UI", "Ubuntu", "Cantarell", "Roboto", sans-serif;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -17,6 +18,7 @@ body{
 }
 
 header{
+    background-color: #fff;
     width: 100%;
     position: absolute;
     top: 0;
@@ -25,7 +27,7 @@ header{
 }
 
 header a{
-    color: #fff;
+    color: #c51a2d;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
@@ -75,6 +77,7 @@ label{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: large;
 }
 
 input[type = "email"],

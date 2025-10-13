@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background: linear-gradient(to right, rgb(71, 71, 247), #bb6f36);*/
+    background: #ffffff;
+    font-family: "Segoe UI", "Ubuntu", "Cantarell", "Roboto", sans-serif;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    background-color: #c51a2d;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    /* Remove as bolinhas */
+    color: rgb(0, 0, 0);
+    /* Muda a cor do texto */
+    font-size: large;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    opacity: 60%;
+    /* toda vez que o usuário passar o mouse por cima do link, ele fica um pouco transparente */
+}
+
+main {
+    width: 100%;
+    max-width: 80%;
+    text-align: left;
+    padding: 2rem;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.068);
+    margin-bottom: 3rem;
+    padding: 2rem;
+    
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+#rodape {
+    background-color: #c51a2d;
+    color: #000000;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 0;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#rodape a {
+    color: #ffffff;
+}
+
+#rodape a:hover {
+    color: white;
+}
+
+#rodape h6 {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ffffff;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+main p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+input::focus {
+    outline: none;
+    border-color: #fff;
+}
