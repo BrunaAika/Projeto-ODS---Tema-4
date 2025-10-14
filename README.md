@@ -13,12 +13,11 @@ Clone ou baixe este repositório.
 Abra o arquivo index.html em qualquer navegador de sua preferência (Google Chrome, Firefox, etc.).
 
 # Estrutura
-/
-│
-├── index.html            # Página principal (Home)
-├── objetivo.html         # Página que descreve a plataforma "EducaFuturo"
-├── login.html            # Página de login de usuários
-├── cadastro.html         # Página de cadastro de novos usuários
+
+├── index.html
+├── objetivo.html
+├── login.html
+├── cadastro.html
 │
 ├── css/
 │   ├── IndexScreen.css
@@ -26,10 +25,14 @@ Abra o arquivo index.html em qualquer navegador de sua preferência (Google Chro
 │   ├── LoginScreen.css
 │   └── CadastroScreen.css
 │
-└── assets/
-│    └── (Pasta para imagens e outros recursos)
+├── assets/
+│   └── (Pasta para imagens e outros recursos)
 │
-└── curriculos dos integrantes
+├── curriculoBruna/
+│   └── curriculoBruna.html
+│
+└── curriculoLuan/
+    └── CV_CSS.html
 
 ## Integrantes
 - Bruna Aika Kiyono 
