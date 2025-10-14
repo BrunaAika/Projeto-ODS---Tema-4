@@ -77,9 +77,10 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 │
 ├── curriculoBruna/
 │   └── curriculoBruna.html
-│
 └── curriculoLuan/
-└── CV_CSS.html
+│   └── CV_CSS.html
+└── curriculoThiago/
+    └── curriculo2025.html
 ```
 
 # 👥 Integrantes e Contribuições
