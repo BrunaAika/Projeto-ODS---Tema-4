@@ -96,7 +96,7 @@ Este projeto foi desenvolvido por:
 ## 🔗 Links
 
 * **Repositório no GitHub:** [**`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`**](`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`)
-* **Vídeo de Apresentação (YouTube): [Video apresentação](https://www.youtube.com/watch?v=7liraq9PGU8"Projeto EducaFuturo")
+* **Vídeo de Apresentação (YouTube): https://youtu.be/7liraq9PGU8?si=LUeVq4CA8NMup7RD
 
 ---
 
