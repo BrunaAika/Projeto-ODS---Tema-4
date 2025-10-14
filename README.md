@@ -59,6 +59,7 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 ---
 
 ## 📁 Estrutura do Projeto
+```
 /
 ├── index.html            # Página principal (Home)
 ├── objetivo.html         # Página que descreve a plataforma "EducaFuturo"
@@ -79,6 +80,7 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 │
 └── curriculoLuan/
 └── CV_CSS.html
+```
 
 # 👥 Integrantes e Contribuições
 
