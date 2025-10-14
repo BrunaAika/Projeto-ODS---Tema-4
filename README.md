@@ -84,11 +84,9 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 
 Este projeto foi desenvolvido por:
 
-| **Bruna Aika Kiyono**
-**Luan Tarumoto de Macedo**
-**Thiago Henrique Rodrigues Arakaki**|
-| :---: | :---: | :---: |
-| Estruturação HTML e Conteúdo das páginas `index.html` e `objetivo.html`. Criação dos links de navegação e rodapé padrão. | Criação e estruturação das páginas de interação, como `login.html` e `cadastro.html`, incluindo formulários e integração de ícones. | Responsável pela estilização (CSS) das páginas, garantindo a consistência visual e aplicação de fontes externas. |
+-Bruna Aika Kiyono
+-Luan Tarumoto de Macedo
+-Thiago Henrique Rodrigues Arakaki
 
 ---
 
