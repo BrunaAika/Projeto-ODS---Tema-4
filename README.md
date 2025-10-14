@@ -94,7 +94,6 @@ Este projeto foi desenvolvido por:
 
 * **Repositório no GitHub:** [**`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`**](`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`)
 * **Vídeo de Apresentação (YouTube):** [**`[]`**](`[]`)
-
 ---
 
 ## 📄 Licença
