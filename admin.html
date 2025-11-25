@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projeto ODS - Admin</title>
+    <link rel="stylesheet" href="css/AdminScreen.css">
+    <!-- Links para a fonte Poppins do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="objetivo.html">Nosso Objetivo</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cadastro">
+            <h1>Admin</h1>
+            <br>
+            <form action="login.html">
+                <div class ="form-group">
+                    <label for="nome"><span class="material-symbols-outlined">person</span>Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+            
+                    <label for="email"><span class="material-symbols-outlined">mail</span>Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+            
+                </div>
+                    <br>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
