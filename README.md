@@ -94,9 +94,9 @@ Este projeto foi desenvolvido por:
 ---
 
 ## 🔗 Links
-* **Github Pages:** https://brunaaika.github.io/Projeto-ODS---Tema-4
-* **Repositório no GitHub:** https://github.com/BrunaAika/Projeto-ODS---Tema-4
-* **Vídeo de Apresentação (YouTube):** https://youtu.be/7liraq9PGU8?si=LUeVq4CA8NMup7RD
+
+* **Repositório no GitHub:** [**`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`**](`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`)
+* **Vídeo de Apresentação (YouTube):** [**`[]`**](`[]`)
 
 ---
 

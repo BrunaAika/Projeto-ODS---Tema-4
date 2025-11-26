@@ -45,7 +45,6 @@ main{
 }
 
 .cadastro{
-    margin-top: 5em;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 15px;
@@ -104,7 +103,7 @@ input::focus{
     outline: none;
     border-color: #fff;
 }
-
+input[type = "button"],
 button{
     padding: 12px;
     border: none;
@@ -126,4 +125,11 @@ button:hover{
 .form-group .material-symbols-outlined {
     margin-right: 8px; /* Adiciona um espaço à direita do ícone */
     font-size: 1.2em; /* Deixa o ícone um pouco maior que o texto*/
+}
+
+.botoes{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Cria 2 colunas de larguras iguais */
+  gap: 10px;
+  margin: 8% 0% 8% 0%;
 }
