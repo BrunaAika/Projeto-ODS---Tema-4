@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Projeto ODS - Admin</title>
     <link rel="stylesheet" href="css/AdminScreen.css">
-    <!-- Links para a fonte Poppins do Google Fonts -->
+    <script src="src/admin.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -36,67 +36,16 @@
                     <label for="email"><span class="material-symbols-outlined">mail</span>Email:</label><br>
                     <input type="email" id="email" name="email" required><br>
 
-                          
-                    <input type="button" value="Cadastrar" onClick="cadastro()">
-                    <br><br>
-
-                    <p>Nome:</p>
-                    <p id="retornonome"> </p>
-                    <br>
-                    <p>Email:</p>
-                    <p id="retornoemail"></p>
+                    <div class="botoes">
+                        <input type="button" value="Cadastrar" onClick="cadastro()">
+                        <input type="button" value="Limpar" onClick="limpar()">
+                        <input type="button" value="Consultar" onClick="consultar()">
+                        <input type="button" value="Excluir" onClick="excluir()">
+                    </div>
                 </div>
             </form>
         </section>
     </main>
-    <script>
-        function cadastro() {
-
-            let valornome = document.getElementById('nome').value
-            if (valornome === '') {
-                alert('Por favor, preencha o campo de nome.')
-                document.getElementById('nome').value
-            } else {
-                if (localStorage.getItem('valornome') === null) {
-                    let ListaNomes = [valornome]
-                    localStorage.setItem("valornome", JSON.stringify(ListaNomes))
-                    document.getElementById('nome').value = ''
-                    let resposta = JSON.parse(localStorage.getItem("valornome"))
-                    document.getElementById('retornonome').innerHTML = resposta
-                } else {
-                    let ListaNomes = JSON.parse(localStorage.getItem('valornome'))
-                    ListaNomes.push(valornome)
-                    localStorage.setItem("valornome", JSON.stringify(ListaNomes))
-                    document.getElementById('nome').value = ""
-                    let resposta = JSON.parse(localStorage.getItem("valornome"))
-                    document.getElementById('retornonome').innerHTML = resposta
-                }
-            }
-            let valoremail = document.getElementById('email').value
-            if (valoremail === '') {
-                alert('Por favor, preencha o campo de email.')
-                document.getElementById('email').value
-            } else {
-                if (localStorage.getItem('valoremail') === null) {
-                    let ListaEmail = [valoremail]
-                    localStorage.setItem("valoremail", JSON.stringify(ListaEmail))
-                    document.getElementById('email').value = ''
-                    let resposta = JSON.parse(localStorage.getItem("valoremail"))
-                    document.getElementById('retornoemail').innerHTML = resposta
-                } else {
-                    let ListaEmail = JSON.parse(localStorage.getItem('valoremail'))
-                    ListaEmail.push(valoremail)
-                    localStorage.setItem("valoremail", JSON.stringify(ListaEmail))
-                    document.getElementById('email').value = ""
-                    let resposta = JSON.parse(localStorage.getItem("valoremail"))
-                    document.getElementById('retornoemail').innerHTML = resposta
-                }
-            }
-
-
-        }
-
-    </script>
 </body>
 
 </html>
