@@ -59,6 +59,7 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 ---
 
 ## 📁 Estrutura do Projeto
+```
 /
 ├── index.html            # Página principal (Home)
 ├── objetivo.html         # Página que descreve a plataforma "EducaFuturo"
@@ -76,9 +77,11 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 │
 ├── curriculoBruna/
 │   └── curriculoBruna.html
-│
 └── curriculoLuan/
-└── CV_CSS.html
+│   └── CV_CSS.html
+└── curriculoThiago/
+    └── curriculo2025.html
+```
 
 # 👥 Integrantes e Contribuições
 
@@ -94,6 +97,7 @@ Este projeto foi desenvolvido por:
 
 * **Repositório no GitHub:** [**`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`**](`[https://github.com/BrunaAika/Projeto-ODS---Tema-4]`)
 * **Vídeo de Apresentação (YouTube):** [**`[]`**](`[]`)
+
 ---
 
 ## 📄 Licença
