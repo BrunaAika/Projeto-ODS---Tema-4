@@ -10,7 +10,6 @@ function cadastro() {
     const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regra para validar email
     
     const dataAtual = new Date();
-    // Adicionei padStart para garantir que dia 5 vire "05"
     const dia = String(dataAtual.getDate()).padStart(2, '0');
     const mes = String(dataAtual.getMonth() + 1).padStart(2, '0');
     const ano = dataAtual.getFullYear();
@@ -144,3 +143,72 @@ function limpar() {
     document.getElementById("nome").value = "";
     document.getElementById("email").value = "";
 }
+
+// Projeto 2 - Listagem, pesquisa e exclusão por índice
+
+function consultar() {
+    const lista = document.getElementById("listaCadastros");
+    if (!lista) return;
+
+    const pesquisaInput = document.getElementById("pesquisa");
+    const filtro = pesquisaInput ? pesquisaInput.value.trim().toLowerCase() : "";
+
+    let listaCadastros = JSON.parse(localStorage.getItem('cadastros')) || [];
+
+    lista.innerHTML = "";
+
+    listaCadastros.forEach(function(item, index) {
+        if (filtro &&
+            !item.nome.toLowerCase().includes(filtro) &&
+            !item.email.toLowerCase().includes(filtro)) {
+            return;
+        }
+
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <span class="cadastro-data">${item.data}</span> — 
+            <strong>${item.nome}</strong> — 
+            <span class="cadastro-email">${item.email}</span>
+            <button type="button" onclick="excluirPorIndice(${index})">Excluir</button>
+        `;
+        lista.appendChild(li);
+    });
+
+    if (lista.children.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "Nenhum cadastro encontrado.";
+        lista.appendChild(li);
+    }
+}
+
+function excluirPorIndice(index) {
+    let listaCadastros = JSON.parse(localStorage.getItem('cadastros')) || [];
+    if (index < 0 || index >= listaCadastros.length) return;
+
+    const usuarioRemovido = listaCadastros[index];
+    const confirmacao = confirm(`Tem certeza que deseja excluir: ${usuarioRemovido.nome} (${usuarioRemovido.email})?`);
+    if (!confirmacao) return;
+
+    listaCadastros.splice(index, 1);
+    localStorage.setItem('cadastros', JSON.stringify(listaCadastros));
+
+    consultar();
+}
+
+function excluirTodos() {
+    let listaCadastros = JSON.parse(localStorage.getItem('cadastros')) || [];
+
+    if (listaCadastros.length === 0) {
+        alert("Não há registros para excluir.");
+        return;
+    }
+
+    const confirmacao = confirm("Tem certeza que deseja excluir TODOS os cadastros?");
+    if (!confirmacao) return;
+
+    localStorage.removeItem('cadastros');
+    consultar();
+}
+
+// Atualiza a lista ao carregar a página
+window.addEventListener("load", consultar);
