@@ -61,26 +61,35 @@ O projeto é estático e não requer instalação de dependências. Para visuali
 ## 📁 Estrutura do Projeto
 ```
 /
-├── index.html            # Página principal (Home)
-├── objetivo.html         # Página que descreve a plataforma "EducaFuturo"
-├── login.html            # Página de login de usuários
-├── cadastro.html         # Página de cadastro de novos usuários
-│
+├── index.html 
+├── objetivo.html 
+├── login.html
+├── cadastro.html
+├── admin.html
+
 ├── css/
-│   ├── IndexScreen.css
-│   ├── ObjetivoScreen.css
-│   ├── LoginScreen.css
-│   └── CadastroScreen.css
-│
-├── assets/
-│   └── (Pasta para imagens e outros recursos)
-│
+│ ├── IndexScreen.css 
+│ ├── ObjetivoScreen.css 
+│ ├── LoginScreen.css 
+│ ├── CadastroScreen.css 
+│ └── AdminScreen.css 
+
+├── src/
+│ └── admin.js 
+
+├── assets/ 
+
 ├── curriculoBruna/
-│   └── curriculoBruna.html
-└── curriculoLuan/
-│   └── CV_CSS.html
-└── curriculoThiago/
-    └── curriculo2025.html
+│ └── curriculoBruna.html
+
+├── curriculoLuan/
+│ └── CV_CSS.html 
+
+├── curriculoThiago/
+│ └── curriculo2025.html 
+
+├── README.md # Documentação do projeto
+└── .gitattributes 
 ```
 
 # 👥 Integrantes e Contribuições
