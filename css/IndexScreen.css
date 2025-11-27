@@ -40,7 +40,6 @@ header a {
 
 header a:hover {
     opacity: 60%;
-    /* toda vez que o usuário passar o mouse por cima do link, ele fica um pouco transparente */
 }
 
 main {

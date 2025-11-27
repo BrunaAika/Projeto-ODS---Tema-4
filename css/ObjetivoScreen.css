@@ -24,9 +24,7 @@ header {
 
 ul {
     list-style: none;
-    /* Remove as bolinhas */
     color: rgb(0, 0, 0);
-    /* Muda a cor do texto */
     font-size: large;
 }
 
@@ -40,7 +38,6 @@ header a {
 
 header a:hover {
     opacity: 60%;
-    /* toda vez que o usuário passar o mouse por cima do link, ele fica um pouco transparente */
 }
 
 main {
